@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pasha.sms.MainActivity" >
+
+    <EditText
+        android:id="@+id/etnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="NUMBER" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etnumber"
+        android:layout_below="@+id/etnumber"
+        android:layout_marginTop="62dp"
+        android:ems="10"
+        android:hint="MESSAGE" />
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etmessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Send" />
+
+</RelativeLayout>
